@@ -18,6 +18,7 @@ public class MessageController {
 	
 	@PostMapping
 	public void publish(@RequestBody MessageRequest request) {
+		//test
 		kafkaTemplate.send("taskTopic",request.message());
 	}
 }
