@@ -1,6 +1,9 @@
 package com.perform.taskKafka;
 
-public record MessageRequest(String message) {
+import java.util.Date;
+
+public record MessageRequest(String taskId,String taskName,Date taskStartDt,
+		Date taskEndDt,String taskStatus) {
 	
 	
 }
